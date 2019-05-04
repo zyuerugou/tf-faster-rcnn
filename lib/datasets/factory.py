@@ -38,6 +38,12 @@ for year in ['2015']:
   for split in ['test', 'test-dev']:
     name = 'coco_{}_{}'.format(year, split)
     __sets[name] = (lambda split=split, year=year: coco(split, year))
+    
+#------------------------------------------------------------------------------------------
+# user added
+# Set up kitti
+#------------------------------------------------------------------------------------------
+#__sets['kitti'] = (lambda 
 
 
 def get_imdb(name):
