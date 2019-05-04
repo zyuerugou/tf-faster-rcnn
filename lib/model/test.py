@@ -27,7 +27,6 @@ from model.nms_wrapper import nms
 # user added
 # to draw the bboxes
 #----------------------------------------------------------------------------------
-import pickle as pl
 import matplotlib.pyplot as plt
 
 #----------------------------------------------------------------------------------
