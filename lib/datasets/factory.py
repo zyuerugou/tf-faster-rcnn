@@ -41,7 +41,8 @@ for year in ['2015']:
     __sets[name] = (lambda split=split, year=year: coco(split, year))
 
 # Set up kitti_<split>
-__set['kitti'] = (lambda split=split: kitti(split))
+for split in ['train', 'val', 'trainval', 'test']
+  __set['kitti'] = (lambda split=split: kitti(split))
 
 
 def get_imdb(name):
