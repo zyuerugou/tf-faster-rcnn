@@ -13,6 +13,7 @@ from __future__ import print_function
 __sets = {}
 from datasets.pascal_voc import pascal_voc
 from datasets.coco import coco
+from datasets.kitti import kitti
 
 import numpy as np
 
@@ -38,6 +39,9 @@ for year in ['2015']:
   for split in ['test', 'test-dev']:
     name = 'coco_{}_{}'.format(year, split)
     __sets[name] = (lambda split=split, year=year: coco(split, year))
+
+# Set up kitti_<split>
+__set['kitti'] = (lambda split=split: kitti(split))
 
 
 def get_imdb(name):
