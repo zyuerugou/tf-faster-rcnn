@@ -41,7 +41,7 @@ for year in ['2015']:
     __sets[name] = (lambda split=split, year=year: coco(split, year))
 
 # Set up kitti_<split>
-for split in ['train', 'val', 'trainval', 'test']
+for split in ['train', 'val', 'trainval', 'test']:
   __set['kitti'] = (lambda split=split: kitti(split))
 
 
