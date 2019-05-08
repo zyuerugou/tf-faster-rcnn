@@ -42,7 +42,8 @@ for year in ['2015']:
 
 # Set up kitti_<split>
 for split in ['train', 'val', 'trainval', 'test']:
-  __set['kitti'] = (lambda split=split: kitti(split))
+  name = 'kitti_{}'.format(split)
+  __set[name] = (lambda split=split: kitti(split))
 
 
 def get_imdb(name):
